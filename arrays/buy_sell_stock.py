@@ -46,11 +46,7 @@ def buy_sell(arr: List[int]) -> int:
     return arr[index_highest] - arr[index_lowest]
 
 
-def test_buy_sell():
+if __name__ == "__main__":
     assert buy_sell([7,6,4,3,1,5]) == 4
     assert buy_sell([7,6,4,3,1]) == 0
     assert buy_sell([7,1,5,3,6,4]) == 5
-
-
-if __name__ == "__main__":
-    test_buy_sell()
